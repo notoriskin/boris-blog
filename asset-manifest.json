@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/boris-blog/static/css/main.0578a87e.css",
-    "main.js": "/boris-blog/static/js/main.f6cab3fe.js",
+    "main.js": "/boris-blog/static/js/main.5a1539eb.js",
     "static/js/453.ce327757.chunk.js": "/boris-blog/static/js/453.ce327757.chunk.js",
     "static/media/blue_background.gif": "/boris-blog/static/media/blue_background.13f65a55ae70cadf94d1.gif",
     "index.html": "/boris-blog/index.html",
     "main.0578a87e.css.map": "/boris-blog/static/css/main.0578a87e.css.map",
-    "main.f6cab3fe.js.map": "/boris-blog/static/js/main.f6cab3fe.js.map",
+    "main.5a1539eb.js.map": "/boris-blog/static/js/main.5a1539eb.js.map",
     "453.ce327757.chunk.js.map": "/boris-blog/static/js/453.ce327757.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0578a87e.css",
-    "static/js/main.f6cab3fe.js"
+    "static/js/main.5a1539eb.js"
   ]
 }
