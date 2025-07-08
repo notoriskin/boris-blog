@@ -2,7 +2,7 @@
   "name": "boris-blog-mui",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://borisryavkin.github.io/boris-blog",
+  "homepage": "https://notoriskin.github.io/boris-blog",
   "dependencies": {
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",

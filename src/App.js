@@ -276,7 +276,7 @@ function App() {
               boxShadow: '0 2px 4px rgba(0,0,0,0.1)'
             }}>
               <iframe
-                src="/resume_full 2024.pdf#view=FitH"
+                src="/boris-blog/resume_full%202024.pdf#view=FitH"
                 width="100%"
                 height="100%"
                 style={{ 
