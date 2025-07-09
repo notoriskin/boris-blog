@@ -46,6 +46,7 @@ function App() {
   const t = translations[language];
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [displayedRole, setDisplayedRole] = useState('');
+  const [isLoading, setIsLoading] = useState(true);
   const fullRole = t.hero.animatedRole;
 
   useEffect(() => {
@@ -70,6 +71,15 @@ function App() {
     }
   }, [isMobile]);
 
+  // Handle loading screen
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 2000); // Show loading for 2 seconds
+
+    return () => clearTimeout(timer);
+  }, []);
+
   const handleDrawerToggle = () => {
     setSidebarOpen(!sidebarOpen);
   };
@@ -92,6 +102,48 @@ function App() {
 
   return (
     <Box sx={{ display: 'flex', position: 'relative', minHeight: '100vh' }}>
+      {/* Loading Screen */}
+      <Fade in={isLoading} timeout={500}>
+        <Box
+          sx={{
+            position: 'fixed',
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            backgroundColor: 'rgba(0, 0, 0, 0.9)',
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'center',
+            alignItems: 'center',
+            zIndex: 9999,
+          }}
+        >
+          <Box
+            component="img"
+            src="/boris-blog/boris-ryavkin.gif"
+            alt="Loading..."
+            sx={{
+              width: isMobile ? '200px' : '300px',
+              height: 'auto',
+              borderRadius: '10px',
+              boxShadow: '0 4px 20px rgba(0, 0, 0, 0.3)',
+            }}
+          />
+          <Typography
+            variant="h6"
+            sx={{
+              color: '#fff',
+              mt: 2,
+              fontWeight: 600,
+              textAlign: 'center',
+            }}
+          >
+            Loading...
+          </Typography>
+        </Box>
+      </Fade>
+
       <Box 
         sx={{
           position: 'fixed',
